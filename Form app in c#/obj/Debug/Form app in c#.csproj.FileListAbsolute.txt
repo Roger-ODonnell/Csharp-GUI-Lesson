@@ -1,0 +1,11 @@
+C:\Users\roger\Desktop\Programing\C#\Form app in c#\Form app in c#\bin\Debug\Form app in c#.exe.config
+C:\Users\roger\Desktop\Programing\C#\Form app in c#\Form app in c#\bin\Debug\Form app in c#.exe
+C:\Users\roger\Desktop\Programing\C#\Form app in c#\Form app in c#\bin\Debug\Form app in c#.pdb
+C:\Users\roger\Desktop\Programing\C#\Form app in c#\Form app in c#\obj\Debug\Form app in c#.csproj.AssemblyReference.cache
+C:\Users\roger\Desktop\Programing\C#\Form app in c#\Form app in c#\obj\Debug\Form app in c#.csproj.SuggestedBindingRedirects.cache
+C:\Users\roger\Desktop\Programing\C#\Form app in c#\Form app in c#\obj\Debug\Form_app_in_c_.Properties.Resources.resources
+C:\Users\roger\Desktop\Programing\C#\Form app in c#\Form app in c#\obj\Debug\Form app in c#.csproj.GenerateResource.cache
+C:\Users\roger\Desktop\Programing\C#\Form app in c#\Form app in c#\obj\Debug\Form app in c#.csproj.CoreCompileInputs.cache
+C:\Users\roger\Desktop\Programing\C#\Form app in c#\Form app in c#\obj\Debug\Form app in c#.exe
+C:\Users\roger\Desktop\Programing\C#\Form app in c#\Form app in c#\obj\Debug\Form app in c#.pdb
+C:\Users\roger\Desktop\Programing\C#\Form app in c#\Form app in c#\obj\Debug\Form_app_in_c_.Form.resources
