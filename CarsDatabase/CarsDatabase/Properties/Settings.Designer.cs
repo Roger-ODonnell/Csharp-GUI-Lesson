@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Form_app_in_c_.Properties
+namespace CarsDatabase.Properties
 {
 
 

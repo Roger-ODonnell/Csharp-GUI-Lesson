@@ -1,7 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Form_app_in_c_
+namespace CarsDatabase
 {
     internal static class Program
     {
@@ -13,7 +16,7 @@ namespace Form_app_in_c_
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form());
+            Application.Run(new Form1());
         }
     }
 }
