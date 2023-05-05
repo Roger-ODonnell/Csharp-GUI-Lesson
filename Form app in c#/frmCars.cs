@@ -1,21 +1,14 @@
 ﻿using System;
-using System.Text;
+
 using System.Windows.Forms;
 
 namespace Form_app_in_c_
 {
     public partial class Form : System.Windows.Forms.Form
     {
-        String labelText = "";
-
         public Form()
         {
             InitializeComponent();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void Bowmans_Load(object sender, EventArgs e)
@@ -56,16 +49,6 @@ namespace Form_app_in_c_
         private void button10_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            labelText = comboBox1.Text;
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-            label6.Text = labelText;
         }
     }
 }
