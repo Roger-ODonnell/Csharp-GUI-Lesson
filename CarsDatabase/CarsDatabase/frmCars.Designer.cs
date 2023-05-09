@@ -29,29 +29,29 @@
         private void InitializeComponent()
         {
             this.Header = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.VehicleRegInput = new System.Windows.Forms.TextBox();
-            this.makeInput = new System.Windows.Forms.TextBox();
-            this.engineInput = new System.Windows.Forms.TextBox();
+            this.frmVehicleRegLabel = new System.Windows.Forms.Label();
+            this.frmVehicleMakeLabel = new System.Windows.Forms.Label();
+            this.frmVehicleEngineLabel = new System.Windows.Forms.Label();
+            this.frmVehicleDateRegLabel = new System.Windows.Forms.Label();
+            this.frmVehicleRentLabel = new System.Windows.Forms.Label();
+            this.frmVehicleAvailLabel = new System.Windows.Forms.Label();
+            this.vehicleRegInput = new System.Windows.Forms.TextBox();
+            this.vehicleMakeInput = new System.Windows.Forms.TextBox();
+            this.vehicleEngineInput = new System.Windows.Forms.TextBox();
             this.dateRegInput = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.rentPerDayInput = new System.Windows.Forms.TextBox();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnSearch = new System.Windows.Forms.Button();
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
+            this.btnFirst = new System.Windows.Forms.Button();
+            this.btnPrevious = new System.Windows.Forms.Button();
+            this.pageCountDisplay = new System.Windows.Forms.TextBox();
+            this.btnNext = new System.Windows.Forms.Button();
+            this.btnLast = new System.Windows.Forms.Button();
+            this.availCheck = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // Header
@@ -64,219 +64,220 @@
             this.Header.TabIndex = 0;
             this.Header.Text = "Bowmans Car Hire";
             // 
-            // label1
+            // frmVehicleRegLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.Control;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label1.Location = new System.Drawing.Point(12, 129);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(285, 25);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Vehicle Registration Number";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.frmVehicleRegLabel.AutoSize = true;
+            this.frmVehicleRegLabel.BackColor = System.Drawing.SystemColors.Control;
+            this.frmVehicleRegLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.frmVehicleRegLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.frmVehicleRegLabel.Location = new System.Drawing.Point(12, 129);
+            this.frmVehicleRegLabel.Name = "frmVehicleRegLabel";
+            this.frmVehicleRegLabel.Size = new System.Drawing.Size(285, 25);
+            this.frmVehicleRegLabel.TabIndex = 1;
+            this.frmVehicleRegLabel.Text = "Vehicle Registration Number";
+            this.frmVehicleRegLabel.Click += new System.EventHandler(this.label1_Click);
             // 
-            // label2
+            // frmVehicleMakeLabel
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label2.Location = new System.Drawing.Point(15, 171);
-            this.label2.Name = "label2";
-            this.label2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label2.Size = new System.Drawing.Size(65, 25);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Make";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.frmVehicleMakeLabel.AutoSize = true;
+            this.frmVehicleMakeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.frmVehicleMakeLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.frmVehicleMakeLabel.Location = new System.Drawing.Point(15, 171);
+            this.frmVehicleMakeLabel.Name = "frmVehicleMakeLabel";
+            this.frmVehicleMakeLabel.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.frmVehicleMakeLabel.Size = new System.Drawing.Size(65, 25);
+            this.frmVehicleMakeLabel.TabIndex = 2;
+            this.frmVehicleMakeLabel.Text = "Make";
+            this.frmVehicleMakeLabel.Click += new System.EventHandler(this.label2_Click);
             // 
-            // label3
+            // frmVehicleEngineLabel
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label3.Location = new System.Drawing.Point(12, 220);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(127, 25);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Engine Size";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
+            this.frmVehicleEngineLabel.AutoSize = true;
+            this.frmVehicleEngineLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.frmVehicleEngineLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.frmVehicleEngineLabel.Location = new System.Drawing.Point(12, 220);
+            this.frmVehicleEngineLabel.Name = "frmVehicleEngineLabel";
+            this.frmVehicleEngineLabel.Size = new System.Drawing.Size(127, 25);
+            this.frmVehicleEngineLabel.TabIndex = 3;
+            this.frmVehicleEngineLabel.Text = "Engine Size";
+            this.frmVehicleEngineLabel.Click += new System.EventHandler(this.label3_Click);
             // 
-            // label4
+            // frmVehicleDateRegLabel
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label4.Location = new System.Drawing.Point(12, 271);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(167, 25);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "Date Registered";
+            this.frmVehicleDateRegLabel.AutoSize = true;
+            this.frmVehicleDateRegLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.frmVehicleDateRegLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.frmVehicleDateRegLabel.Location = new System.Drawing.Point(12, 271);
+            this.frmVehicleDateRegLabel.Name = "frmVehicleDateRegLabel";
+            this.frmVehicleDateRegLabel.Size = new System.Drawing.Size(167, 25);
+            this.frmVehicleDateRegLabel.TabIndex = 4;
+            this.frmVehicleDateRegLabel.Text = "Date Registered";
             // 
-            // label5
+            // frmVehicleRentLabel
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label5.Location = new System.Drawing.Point(12, 332);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(157, 25);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "Rental Per Day";
+            this.frmVehicleRentLabel.AutoSize = true;
+            this.frmVehicleRentLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.frmVehicleRentLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.frmVehicleRentLabel.Location = new System.Drawing.Point(12, 332);
+            this.frmVehicleRentLabel.Name = "frmVehicleRentLabel";
+            this.frmVehicleRentLabel.Size = new System.Drawing.Size(157, 25);
+            this.frmVehicleRentLabel.TabIndex = 5;
+            this.frmVehicleRentLabel.Text = "Rental Per Day";
             // 
-            // label6
+            // frmVehicleAvailLabel
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label6.Location = new System.Drawing.Point(10, 386);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(100, 25);
-            this.label6.TabIndex = 6;
-            this.label6.Text = "Available";
+            this.frmVehicleAvailLabel.AutoSize = true;
+            this.frmVehicleAvailLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.frmVehicleAvailLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.frmVehicleAvailLabel.Location = new System.Drawing.Point(10, 386);
+            this.frmVehicleAvailLabel.Name = "frmVehicleAvailLabel";
+            this.frmVehicleAvailLabel.Size = new System.Drawing.Size(100, 25);
+            this.frmVehicleAvailLabel.TabIndex = 6;
+            this.frmVehicleAvailLabel.Text = "Available";
             // 
-            // VehicleRegInput
+            // vehicleRegInput
             // 
-            this.VehicleRegInput.Location = new System.Drawing.Point(364, 129);
-            this.VehicleRegInput.Name = "VehicleRegInput";
-            this.VehicleRegInput.Size = new System.Drawing.Size(199, 20);
-            this.VehicleRegInput.TabIndex = 7;
+            this.vehicleRegInput.Location = new System.Drawing.Point(364, 134);
+            this.vehicleRegInput.Name = "vehicleRegInput";
+            this.vehicleRegInput.Size = new System.Drawing.Size(199, 20);
+            this.vehicleRegInput.TabIndex = 7;
             // 
-            // makeInput
+            // vehicleMakeInput
             // 
-            this.makeInput.Location = new System.Drawing.Point(364, 176);
-            this.makeInput.Name = "makeInput";
-            this.makeInput.Size = new System.Drawing.Size(199, 20);
-            this.makeInput.TabIndex = 8;
+            this.vehicleMakeInput.Location = new System.Drawing.Point(364, 177);
+            this.vehicleMakeInput.Name = "vehicleMakeInput";
+            this.vehicleMakeInput.Size = new System.Drawing.Size(199, 20);
+            this.vehicleMakeInput.TabIndex = 8;
             // 
-            // engineInput
+            // vehicleEngineInput
             // 
-            this.engineInput.Location = new System.Drawing.Point(364, 220);
-            this.engineInput.Name = "engineInput";
-            this.engineInput.Size = new System.Drawing.Size(199, 20);
-            this.engineInput.TabIndex = 9;
+            this.vehicleEngineInput.Location = new System.Drawing.Point(364, 225);
+            this.vehicleEngineInput.Name = "vehicleEngineInput";
+            this.vehicleEngineInput.Size = new System.Drawing.Size(199, 20);
+            this.vehicleEngineInput.TabIndex = 9;
             // 
             // dateRegInput
             // 
-            this.dateRegInput.Location = new System.Drawing.Point(364, 271);
+            this.dateRegInput.Location = new System.Drawing.Point(364, 276);
             this.dateRegInput.Name = "dateRegInput";
             this.dateRegInput.Size = new System.Drawing.Size(199, 20);
             this.dateRegInput.TabIndex = 10;
             // 
-            // textBox5
+            // rentPerDayInput
             // 
-            this.textBox5.Location = new System.Drawing.Point(364, 332);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(199, 20);
-            this.textBox5.TabIndex = 11;
+            this.rentPerDayInput.Location = new System.Drawing.Point(364, 337);
+            this.rentPerDayInput.Name = "rentPerDayInput";
+            this.rentPerDayInput.Size = new System.Drawing.Size(199, 20);
+            this.rentPerDayInput.TabIndex = 11;
             // 
-            // button1
+            // btnUpdate
             // 
-            this.button1.Location = new System.Drawing.Point(969, 53);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(165, 50);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "Update";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnUpdate.Location = new System.Drawing.Point(969, 53);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(165, 50);
+            this.btnUpdate.TabIndex = 13;
+            this.btnUpdate.Text = "&Update";
+            this.btnUpdate.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnAdd
             // 
-            this.button2.Location = new System.Drawing.Point(969, 129);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(165, 50);
-            this.button2.TabIndex = 14;
-            this.button2.Text = "Add";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnAdd.Location = new System.Drawing.Point(969, 129);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(165, 50);
+            this.btnAdd.TabIndex = 14;
+            this.btnAdd.Text = "&Add";
+            this.btnAdd.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnDelete
             // 
-            this.button3.Location = new System.Drawing.Point(969, 210);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(165, 50);
-            this.button3.TabIndex = 15;
-            this.button3.Text = "Delete";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnDelete.Location = new System.Drawing.Point(969, 210);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(165, 50);
+            this.btnDelete.TabIndex = 15;
+            this.btnDelete.Text = "&Delete";
+            this.btnDelete.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btnSearch
             // 
-            this.button4.Location = new System.Drawing.Point(969, 289);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(165, 50);
-            this.button4.TabIndex = 16;
-            this.button4.Text = "Search";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnSearch.Location = new System.Drawing.Point(969, 289);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(165, 50);
+            this.btnSearch.TabIndex = 16;
+            this.btnSearch.Text = "&Search";
+            this.btnSearch.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // btnCancel
             // 
-            this.button5.Location = new System.Drawing.Point(969, 361);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(165, 50);
-            this.button5.TabIndex = 17;
-            this.button5.Text = "Cancel";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnCancel.Location = new System.Drawing.Point(969, 361);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(165, 50);
+            this.btnCancel.TabIndex = 17;
+            this.btnCancel.Text = "&Cancel";
+            this.btnCancel.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // btnExit
             // 
-            this.button6.Location = new System.Drawing.Point(969, 434);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(165, 50);
-            this.button6.TabIndex = 18;
-            this.button6.Text = "Exit";
-            this.button6.UseVisualStyleBackColor = true;
+            this.btnExit.Location = new System.Drawing.Point(969, 434);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(165, 50);
+            this.btnExit.TabIndex = 18;
+            this.btnExit.Text = "&Exit";
+            this.btnExit.UseVisualStyleBackColor = true;
             // 
-            // button7
+            // btnFirst
             // 
-            this.button7.Location = new System.Drawing.Point(139, 527);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(165, 50);
-            this.button7.TabIndex = 19;
-            this.button7.Text = "First";
-            this.button7.UseVisualStyleBackColor = true;
+            this.btnFirst.Location = new System.Drawing.Point(139, 527);
+            this.btnFirst.Name = "btnFirst";
+            this.btnFirst.Size = new System.Drawing.Size(165, 50);
+            this.btnFirst.TabIndex = 19;
+            this.btnFirst.Text = "First";
+            this.btnFirst.UseVisualStyleBackColor = true;
             // 
-            // button8
+            // btnPrevious
             // 
-            this.button8.Location = new System.Drawing.Point(310, 527);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(165, 50);
-            this.button8.TabIndex = 20;
-            this.button8.Text = "Previous";
-            this.button8.UseVisualStyleBackColor = true;
+            this.btnPrevious.Location = new System.Drawing.Point(310, 527);
+            this.btnPrevious.Name = "btnPrevious";
+            this.btnPrevious.Size = new System.Drawing.Size(165, 50);
+            this.btnPrevious.TabIndex = 20;
+            this.btnPrevious.Text = "Previous";
+            this.btnPrevious.UseVisualStyleBackColor = true;
             // 
-            // textBox7
+            // pageCountDisplay
             // 
-            this.textBox7.Location = new System.Drawing.Point(481, 543);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(121, 20);
-            this.textBox7.TabIndex = 21;
-            this.textBox7.Text = "1 of 15";
-            this.textBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.pageCountDisplay.Location = new System.Drawing.Point(481, 543);
+            this.pageCountDisplay.Name = "pageCountDisplay";
+            this.pageCountDisplay.Size = new System.Drawing.Size(121, 20);
+            this.pageCountDisplay.TabIndex = 21;
+            this.pageCountDisplay.Text = "1 of 15";
+            this.pageCountDisplay.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // button9
+            // btnNext
             // 
-            this.button9.Location = new System.Drawing.Point(608, 527);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(165, 50);
-            this.button9.TabIndex = 22;
-            this.button9.Text = "Next";
-            this.button9.UseVisualStyleBackColor = true;
+            this.btnNext.Location = new System.Drawing.Point(608, 527);
+            this.btnNext.Name = "btnNext";
+            this.btnNext.Size = new System.Drawing.Size(165, 50);
+            this.btnNext.TabIndex = 22;
+            this.btnNext.Text = "Next";
+            this.btnNext.UseVisualStyleBackColor = true;
             // 
-            // button10
+            // btnLast
             // 
-            this.button10.Location = new System.Drawing.Point(779, 527);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(165, 50);
-            this.button10.TabIndex = 23;
-            this.button10.Text = "Last";
-            this.button10.UseVisualStyleBackColor = true;
+            this.btnLast.Location = new System.Drawing.Point(779, 527);
+            this.btnLast.Name = "btnLast";
+            this.btnLast.Size = new System.Drawing.Size(165, 50);
+            this.btnLast.TabIndex = 23;
+            this.btnLast.Text = "Last";
+            this.btnLast.UseVisualStyleBackColor = true;
             // 
-            // checkBox1
+            // availCheck
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(364, 395);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(15, 14);
-            this.checkBox1.TabIndex = 24;
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.availCheck.AutoSize = true;
+            this.availCheck.Location = new System.Drawing.Point(364, 397);
+            this.availCheck.MinimumSize = new System.Drawing.Size(10, 10);
+            this.availCheck.Name = "availCheck";
+            this.availCheck.Size = new System.Drawing.Size(15, 14);
+            this.availCheck.TabIndex = 24;
+            this.availCheck.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -284,29 +285,29 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1153, 589);
-            this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.button10);
-            this.Controls.Add(this.button9);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.availCheck);
+            this.Controls.Add(this.btnLast);
+            this.Controls.Add(this.btnNext);
+            this.Controls.Add(this.pageCountDisplay);
+            this.Controls.Add(this.btnPrevious);
+            this.Controls.Add(this.btnFirst);
+            this.Controls.Add(this.btnExit);
+            this.Controls.Add(this.btnCancel);
+            this.Controls.Add(this.btnSearch);
+            this.Controls.Add(this.btnDelete);
+            this.Controls.Add(this.btnAdd);
+            this.Controls.Add(this.btnUpdate);
+            this.Controls.Add(this.rentPerDayInput);
             this.Controls.Add(this.dateRegInput);
-            this.Controls.Add(this.engineInput);
-            this.Controls.Add(this.makeInput);
-            this.Controls.Add(this.VehicleRegInput);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.vehicleEngineInput);
+            this.Controls.Add(this.vehicleMakeInput);
+            this.Controls.Add(this.vehicleRegInput);
+            this.Controls.Add(this.frmVehicleAvailLabel);
+            this.Controls.Add(this.frmVehicleRentLabel);
+            this.Controls.Add(this.frmVehicleDateRegLabel);
+            this.Controls.Add(this.frmVehicleEngineLabel);
+            this.Controls.Add(this.frmVehicleMakeLabel);
+            this.Controls.Add(this.frmVehicleRegLabel);
             this.Controls.Add(this.Header);
             this.Name = "Form1";
             this.Text = "Task A";
@@ -318,29 +319,29 @@
         #endregion
 
         private System.Windows.Forms.Label Header;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox VehicleRegInput;
-        private System.Windows.Forms.TextBox makeInput;
-        private System.Windows.Forms.TextBox engineInput;
+        private System.Windows.Forms.Label frmVehicleRegLabel;
+        private System.Windows.Forms.Label frmVehicleMakeLabel;
+        private System.Windows.Forms.Label frmVehicleEngineLabel;
+        private System.Windows.Forms.Label frmVehicleDateRegLabel;
+        private System.Windows.Forms.Label frmVehicleRentLabel;
+        private System.Windows.Forms.Label frmVehicleAvailLabel;
+        private System.Windows.Forms.TextBox vehicleRegInput;
+        private System.Windows.Forms.TextBox vehicleMakeInput;
+        private System.Windows.Forms.TextBox vehicleEngineInput;
         private System.Windows.Forms.TextBox dateRegInput;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.TextBox rentPerDayInput;
+        private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Button btnFirst;
+        private System.Windows.Forms.Button btnPrevious;
+        private System.Windows.Forms.TextBox pageCountDisplay;
+        private System.Windows.Forms.Button btnNext;
+        private System.Windows.Forms.Button btnLast;
+        private System.Windows.Forms.CheckBox availCheck;
     }
 }
 
