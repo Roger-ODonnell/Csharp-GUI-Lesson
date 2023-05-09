@@ -1,7 +1,5 @@
 # C-Sharp Forms application with database 
-<br>
-![Screenshot 2023-05-09 150833](https://github.com/Roger-ODonnell/Csharp-GUI-Lesson/assets/71945647/e6c6bf03-6b94-4927-babb-4facbed24284)
-<br>
-![Screenshot 2023-05-09 150846](https://github.com/Roger-ODonnell/Csharp-GUI-Lesson/assets/71945647/b2416b49-2975-4a28-bd37-2cafacf9137f)
-<br>
-![Screenshot 2023-05-09 150901](https://github.com/Roger-ODonnell/Csharp-GUI-Lesson/assets/71945647/ce6b1257-b077-4021-b298-058db6f5354d)
+
+https://github.com/Roger-ODonnell/Csharp-GUI-Lesson/assets/71945647/679f5f8a-09da-47bc-8776-d991f5da7eca
+https://github.com/Roger-ODonnell/Csharp-GUI-Lesson/assets/71945647/246918bd-0634-45a4-bbde-84217f063a1c
+https://github.com/Roger-ODonnell/Csharp-GUI-Lesson/assets/71945647/aa212037-3045-499a-9f40-0e97c98346f3
