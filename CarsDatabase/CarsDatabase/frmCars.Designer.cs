@@ -48,7 +48,7 @@
             this.btnExit = new System.Windows.Forms.Button();
             this.btnFirst = new System.Windows.Forms.Button();
             this.btnPrevious = new System.Windows.Forms.Button();
-            this.pageCountDisplay = new System.Windows.Forms.TextBox();
+            this.recordCount = new System.Windows.Forms.TextBox();
             this.btnNext = new System.Windows.Forms.Button();
             this.btnLast = new System.Windows.Forms.Button();
             this.availCheck = new System.Windows.Forms.CheckBox();
@@ -178,6 +178,7 @@
             this.btnUpdate.TabIndex = 13;
             this.btnUpdate.Text = "&Update";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnAdd
             // 
@@ -187,6 +188,7 @@
             this.btnAdd.TabIndex = 14;
             this.btnAdd.Text = "&Add";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnDelete
             // 
@@ -196,6 +198,7 @@
             this.btnDelete.TabIndex = 15;
             this.btnDelete.Text = "&Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnSearch
             // 
@@ -205,6 +208,7 @@
             this.btnSearch.TabIndex = 16;
             this.btnSearch.Text = "&Search";
             this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // btnCancel
             // 
@@ -214,6 +218,7 @@
             this.btnCancel.TabIndex = 17;
             this.btnCancel.Text = "&Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnExit
             // 
@@ -223,6 +228,7 @@
             this.btnExit.TabIndex = 18;
             this.btnExit.Text = "&Exit";
             this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // btnFirst
             // 
@@ -232,6 +238,7 @@
             this.btnFirst.TabIndex = 19;
             this.btnFirst.Text = "First";
             this.btnFirst.UseVisualStyleBackColor = true;
+            this.btnFirst.Click += new System.EventHandler(this.btnFirst_Click);
             // 
             // btnPrevious
             // 
@@ -241,15 +248,16 @@
             this.btnPrevious.TabIndex = 20;
             this.btnPrevious.Text = "Previous";
             this.btnPrevious.UseVisualStyleBackColor = true;
+            this.btnPrevious.Click += new System.EventHandler(this.btnPrevious_Click);
             // 
-            // pageCountDisplay
+            // recordCount
             // 
-            this.pageCountDisplay.Location = new System.Drawing.Point(481, 543);
-            this.pageCountDisplay.Name = "pageCountDisplay";
-            this.pageCountDisplay.Size = new System.Drawing.Size(121, 20);
-            this.pageCountDisplay.TabIndex = 21;
-            this.pageCountDisplay.Text = "1 of 15";
-            this.pageCountDisplay.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.recordCount.Location = new System.Drawing.Point(481, 543);
+            this.recordCount.Name = "recordCount";
+            this.recordCount.Size = new System.Drawing.Size(121, 20);
+            this.recordCount.TabIndex = 21;
+            this.recordCount.Text = "1 of 15";
+            this.recordCount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // btnNext
             // 
@@ -259,6 +267,7 @@
             this.btnNext.TabIndex = 22;
             this.btnNext.Text = "Next";
             this.btnNext.UseVisualStyleBackColor = true;
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
             // btnLast
             // 
@@ -268,6 +277,7 @@
             this.btnLast.TabIndex = 23;
             this.btnLast.Text = "Last";
             this.btnLast.UseVisualStyleBackColor = true;
+            this.btnLast.Click += new System.EventHandler(this.btnLast_Click);
             // 
             // availCheck
             // 
@@ -288,7 +298,7 @@
             this.Controls.Add(this.availCheck);
             this.Controls.Add(this.btnLast);
             this.Controls.Add(this.btnNext);
-            this.Controls.Add(this.pageCountDisplay);
+            this.Controls.Add(this.recordCount);
             this.Controls.Add(this.btnPrevious);
             this.Controls.Add(this.btnFirst);
             this.Controls.Add(this.btnExit);
@@ -338,7 +348,7 @@
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button btnFirst;
         private System.Windows.Forms.Button btnPrevious;
-        private System.Windows.Forms.TextBox pageCountDisplay;
+        private System.Windows.Forms.TextBox recordCount;
         private System.Windows.Forms.Button btnNext;
         private System.Windows.Forms.Button btnLast;
         private System.Windows.Forms.CheckBox availCheck;
