@@ -275,5 +275,10 @@ namespace CarsDatabase
             availCheck.BackColor = Color.White;
             rentPerDayInput.BackColor = Color.White;
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }//End of class
 }
