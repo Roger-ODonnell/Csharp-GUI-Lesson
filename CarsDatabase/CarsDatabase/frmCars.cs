@@ -9,7 +9,7 @@ namespace CarsDatabase
     public partial class Form1 : Form
     {
 
-        SQLiteConnection databaseConnection = new SQLiteConnection(@"data source= hire.db");
+        SQLiteConnection databaseConnection = new SQLiteConnection(@"Data Source=C:\\data\\hire.db");
 
         public Form1()
         {
@@ -117,6 +117,7 @@ namespace CarsDatabase
         {
             try
             {
+                frmDataGrid.Visible = false;
                 recTotal();
                 getData();
             }
@@ -137,13 +138,13 @@ namespace CarsDatabase
             try
             {
                 databaseConnection.Open();
-                string getDB = $@"SELECT * FROM(SELECT * tblCar LIMIT 1 OFFSET {rowPosition}";
+                string getDB = $@"SELECT * FROM(SELECT * from tblCar LIMIT 1 OFFSET {rowPosition})";
                 SQLiteCommand cmd = new SQLiteCommand(getDB, databaseConnection);
                 DataTable dt = new DataTable();
                 SQLiteDataAdapter adapter = new SQLiteDataAdapter(cmd);
                 adapter.Fill(dt);
 
-                //frmDataGrid.DataSource = dt;
+                frmDataGrid.DataSource = dt;
                 databaseConnection.Close();
 
                 vehicleRegInput.Text = Convert.ToString(dt.Rows[0].ItemArray[1]);
@@ -173,7 +174,7 @@ namespace CarsDatabase
             }
             catch (Exception)
             {
-                MessageBox.Show("cannto find data");
+                MessageBox.Show("cannot find data");
             }
         }
 
@@ -209,7 +210,7 @@ namespace CarsDatabase
             DialogResult toUpdate = MessageBox.Show("Are you sure youd like to update this record", "",MessageBoxButtons.YesNo);
             if (toUpdate == DialogResult.Yes)
             {
-                //updateRecord();
+                updateRecord();
                 MessageBox.Show("Record updated");
             }
             else if (toUpdate == DialogResult.No)
@@ -221,6 +222,38 @@ namespace CarsDatabase
             dateRegInput.BackColor = Color.White;
             availCheck.BackColor = Color.White;
             rentPerDayInput.BackColor = Color.White;
+            recordCounter("update");
+            getData();
+        }
+
+        private void updateRecord()
+        {
+            int offSetNumber = recordControlNo - 1;
+
+            try
+            {
+                if (availCheck.Checked == true)
+                {
+                    availability = 1;
+                }
+                if (availCheck.Checked == false)
+                {
+                    availability = 0;
+                }
+
+                string updateARecord = $@"UPDATE tblCar SET VehicleRegNo = '" + vehicleRegInput.Text + "', Make = '" + vehicleMakeInput.Text + "', Engine Size = '" + vehicleEngineInput.Text + "'Date registered = '" + dateRegInput.Text + "', Rental per day = '" + rentPerDayInput + "'Available= '" + availCheck;
+                databaseConnection.Open();
+                SQLiteCommand insertSQL = new SQLiteCommand(databaseConnection);
+                insertSQL.CommandText = updateARecord;
+                insertSQL.ExecuteNonQuery();
+                databaseConnection.Close();
+                recTotal();
+                getData();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("cannot update data");
+            }
         }
 
         private void vehicleMakeInput_TextChanged(object sender, EventArgs e)
@@ -246,7 +279,7 @@ namespace CarsDatabase
         {
             try
             {
-                string deleteARecord = $@"DELETE FROM tblCAR WHERE vehicleRegNo = '{vehicleRegInput}'";
+                string deleteARecord = $@"DELETE FROM tblCAR WHERE vehicleRegNo = '{vehicleRegInput.Text}'";
 
                 databaseConnection.Open();
                 string sendData2 = deleteARecord;
@@ -276,7 +309,34 @@ namespace CarsDatabase
             rentPerDayInput.BackColor = Color.White;
         }
 
+        private void FrmCars_Load(object sender, EventArgs e)
+        {// This is what happens when to form loads
+            try
+            {
+                recTotal();
+                getData();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Can't Load database.  Check database connection."); // if 
+            }
+
+            btnUpdate.Enabled = false; // Update button
+            btnCancel.Enabled = false; // Update button
+            updatePanel.Visible = false; // Panel button
+
+            if (btnUpdate.Enabled == true)
+            {
+                updatePanel.Visible = true;
+            }
+        }
+
         private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void frmDataGrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

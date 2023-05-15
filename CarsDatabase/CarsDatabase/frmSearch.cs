@@ -1,17 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Data.SQLite;
 using System.Windows.Forms;
 
 namespace CarsDatabase
 {
     public partial class frmSearch : Form
     {
+        SQLiteConnection databaseConnection = new SQLiteConnection(@"data source = c:\data\hire.db"); // Connecting to database
         public frmSearch()
         {
             InitializeComponent();
@@ -25,6 +20,11 @@ namespace CarsDatabase
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

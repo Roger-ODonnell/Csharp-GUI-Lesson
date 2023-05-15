@@ -53,7 +53,9 @@
             this.btnLast = new System.Windows.Forms.Button();
             this.availCheck = new System.Windows.Forms.CheckBox();
             this.updatePanel = new System.Windows.Forms.Panel();
+            this.frmDataGrid = new System.Windows.Forms.DataGridView();
             this.updatePanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.frmDataGrid)).BeginInit();
             this.SuspendLayout();
             // 
             // Header
@@ -307,12 +309,22 @@
             this.updatePanel.TabIndex = 25;
             this.updatePanel.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // frmDataGrid
+            // 
+            this.frmDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.frmDataGrid.Location = new System.Drawing.Point(58, 28);
+            this.frmDataGrid.Name = "frmDataGrid";
+            this.frmDataGrid.Size = new System.Drawing.Size(218, 91);
+            this.frmDataGrid.TabIndex = 26;
+            this.frmDataGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.frmDataGrid_CellContentClick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1153, 589);
+            this.Controls.Add(this.frmDataGrid);
             this.Controls.Add(this.btnLast);
             this.Controls.Add(this.btnNext);
             this.Controls.Add(this.recordCount);
@@ -335,6 +347,7 @@
             this.Text = "Task A";
             this.updatePanel.ResumeLayout(false);
             this.updatePanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.frmDataGrid)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -367,6 +380,7 @@
         private System.Windows.Forms.Button btnLast;
         private System.Windows.Forms.CheckBox availCheck;
         private System.Windows.Forms.Panel updatePanel;
+        private System.Windows.Forms.DataGridView frmDataGrid;
     }
 }
 

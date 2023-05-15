@@ -11,3 +11,8 @@ C:\Users\roger\Desktop\Programing\C#\GUI\CarsDatabase\CarsDatabase\obj\Debug\Car
 C:\Users\roger\Desktop\Programing\C#\GUI\CarsDatabase\CarsDatabase\obj\Debug\CarsDatabase.csproj.CoreCompileInputs.cache
 C:\Users\roger\Desktop\Programing\C#\GUI\CarsDatabase\CarsDatabase\obj\Debug\CarsDatabase.exe
 C:\Users\roger\Desktop\Programing\C#\GUI\CarsDatabase\CarsDatabase\obj\Debug\CarsDatabase.pdb
+C:\Users\roger\Desktop\Programing\C#\GUI\CarsDatabase\CarsDatabase\bin\Debug\System.Data.SQLite.dll
+C:\Users\roger\Desktop\Programing\C#\GUI\CarsDatabase\CarsDatabase\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\roger\Desktop\Programing\C#\GUI\CarsDatabase\CarsDatabase\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\roger\Desktop\Programing\C#\GUI\CarsDatabase\CarsDatabase\bin\Debug\System.Data.SQLite.xml
+C:\Users\roger\Desktop\Programing\C#\GUI\CarsDatabase\CarsDatabase\obj\Debug\CarsDatabase.csproj.CopyComplete
